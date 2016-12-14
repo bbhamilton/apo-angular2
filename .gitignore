@@ -1,5 +1,5 @@
 .sass-cache
-node_modules
+node_modules/*
 !node_modules/@angular/*
 !node_modules/angular2-notifications/*
 !node_modules/core-js/*
