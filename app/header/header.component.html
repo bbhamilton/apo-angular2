@@ -1,0 +1,35 @@
+<nav class="main-navigation">
+  <ul class="main-navigation__items">
+    <li class="main-navigation__logo"><img routerLink="/leaderboard" src="src/images/logo.png" alt="Apocalypternet - logo" /></li>
+    <li class="main-navigation__vertical-line--short"></li>
+    <li class="main-navigation__slogan"><p>The day the Internet has been destroyed</p></li>
+    <li class="main-navigation__menu-element"><a routerLink="/leaderboard" routerLinkActive="current" replaceUrl class="btn" [ngClass]="{current: routeLeaderboard }">leaderboard</a></li>
+    <!-- <li class="main-navigation__menu-element"><a [routerLink]="['PevexPage']" class="btn" [ngClass]="{current: routePevex }">pevex</a></li> -->
+    <li class="main-navigation__menu_element"><a routerLink="/challenges" routerLinkActive="current" replaceUrl class="btn" [ngClass]="{current: routeTasks }">challenges</a></li>
+    <!-- <li class="main-navigation__menu_element"><a routerLink="/profile" routerLinkActive="current" class="btn" [ngClass]="{current: routeProfile }">your profile</a></li> -->
+    <li class="main-navigation__vertical-line--long"></li>
+    <li class="main-navigation__points-counter points-counter--user">
+      <img src="src/images/exp.png" alt="exp" /><span> x {{ player_exp }}</span>
+    </li>
+    <li class="main-navigation__vertical-line--invisible"></li>
+    <li class="main-navigation__points-counter points-counter--user">
+      <img src="src/images/mrx.png" alt="mrx" /><span> x {{ player_mrx }}</span>
+    </li>
+    <li class="main-navigation__vertical-line--long"></li>
+    <li class="main-navigation__user-profile" >
+      <a class="submenu__link" routerLink="/profile" >
+        <div class="avatar">
+          <img src="{{ avatar }}" alt="{{ player_name }}" class="rounded" >
+        </div>
+        <span>{{ player_name }}</span>
+        <div class="collapse_down">
+          <img src="src/images/arrow_down.png" alt="collapse down" />
+        </div>
+        <ul class="submenu__container">
+          <li class="submenu__element"><a routerLink="/profile" >your profile</a></li>
+          <li class="submenu__element"><a routerLink="/logout" >logout</a></li>
+        </ul>
+      </a>
+    </li>
+  </ul>
+</nav>

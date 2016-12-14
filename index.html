@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <title>Apocalypternet</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="src/css/app.css" media="screen" title="Apocalypternet">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <!-- Angular 2 libraries -->
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <!-- System.js -->
+    <script src="systemjs.config.js"></script>
+    <script>System.import('app').catch(function(err){ console.error(err); });</script>
+
+    <link rel="shortcut icon" href="src/images/favicon.png">
+
+  </head>
+  <body>
+    <apocalypternet>
+      <div class="loader">
+        <div class="sk-folding-cube">
+          <div class="sk-cube1 sk-cube"></div>
+          <div class="sk-cube2 sk-cube"></div>
+          <div class="sk-cube4 sk-cube"></div>
+          <div class="sk-cube3 sk-cube"></div>
+        </div>
+      </div>
+    </apocalypternet>
+  </body>
+</html>

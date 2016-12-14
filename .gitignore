@@ -1,0 +1,12 @@
+node_modules
+dev
+assets
+**/*npm-debug.log.*
+.DS_Store
+**/.DS_Store
+*.js.map
+*.ts
+_test-output
+_temp
+
+!systemjs.config.js
