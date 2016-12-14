@@ -1,4 +1,12 @@
+.sass-cache
 node_modules
+!node_modules/@angular
+!node_modules/angular2-notifications
+!node_modules/core-js
+!node_modules/reflect-metadata
+!node_modules/rxjs
+!node_modules/systemjs
+!node_modules/zone.js
 dev
 assets
 **/*npm-debug.log.*
@@ -8,5 +16,3 @@ assets
 *.ts
 _test-output
 _temp
-
-!systemjs.config.js
