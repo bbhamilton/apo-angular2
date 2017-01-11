@@ -15,7 +15,7 @@ var LoginComponent = (function () {
         this.router = router;
         // url = 'http://bilicki.stronazen.pl/apo';
         // url = 'http://localhost:3000';
-        this.url = 'http://apo.devmerix.com';
+        this.url = 'https://apo.devmerix.com';
     }
     LoginComponent.prototype.ngOnInit = function () {
     };
